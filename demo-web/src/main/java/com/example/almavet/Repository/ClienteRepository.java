@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ClienteRepository extends CrudRepository<Cliente, Integer> {
 
-    Cliente findByDni(String dni);
+    List<Cliente> findAllByDni(String dni);
 
     Cliente findById(int id);
 

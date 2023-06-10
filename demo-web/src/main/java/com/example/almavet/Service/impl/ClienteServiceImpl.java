@@ -41,8 +41,8 @@ public class ClienteServiceImpl implements ClienteService {
     }
 
     @Override
-    public Cliente findCliente(String dni) {
-        return this.clienteRepository.findByDni(dni);
+    public List<Cliente> findCliente(String dni) {
+        return this.clienteRepository.findAllByDni(dni);
     }
 
     @Override

@@ -15,7 +15,7 @@ public interface ClienteService {
 
     public Cliente findById(int id);
 
-    public Cliente findCliente(String dni);
+    public List<Cliente> findCliente(String dni);
 
     public void deleteCliente(int id);
 
